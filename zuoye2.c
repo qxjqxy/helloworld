@@ -47,7 +47,7 @@ void generateArray(int arr[], int n)
     
     srand(time(NULL));
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < n; i++)
     {
         arr[i] = rand() % 100 ;
          
@@ -67,8 +67,8 @@ void printArray(int arr[], int n)
 // 冒泡排序
 void bubbleSort(int arr[], int n)
 {
-    for(int j=0;j<10-1;j++)
-    { for (int i = 0; i <10-1-j; i++)
+    for(int j=0;j<n-1;j++)
+    { for (int i = 0; i <n-1-j; i++)
        {
         int a = arr[i];
         int b = arr[i + 1];
@@ -85,9 +85,9 @@ void bubbleSort(int arr[], int n)
 // 选择排序 
 void selectionSort(int arr[], int n)
 {
-    for (int i = 0; i < 10 - 1; i++)
+    for (int i = 0; i < n - 1; i++)
     {
-        for (int j = 0; j < 10 - 1 - i;j++)
+        for (int j = 0; j < n- 1 - i;j++)
         {
             if (arr[j] > arr[j + 1])
             {
